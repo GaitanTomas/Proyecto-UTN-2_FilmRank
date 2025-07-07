@@ -1,6 +1,9 @@
 import React from "react";
+import usePageTitle from "../../hooks/usePageTitles";
 
 const Movies = () => {
+    usePageTitle("Peliculas | FilmRank");
+
     return (
     <>
       <h1>Peliculas</h1>

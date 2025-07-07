@@ -14,10 +14,10 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="películas" element={<Movies />} />
+        <Route path="peliculas" element={<Movies />} />
         <Route path="series" element={<Series />} />
         <Route path="miranking" element={<MyRanking />} />
-        <Route path="película/:id" element={<Detail type="movie" />} />
+        <Route path="pelicula/:id" element={<Detail type="movie" />} />
         <Route path="serie/:id" element={<Detail type="series" />} />
       </Route>
       <Route path="*" element={<NotFound />} />

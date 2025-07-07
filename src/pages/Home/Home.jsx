@@ -1,6 +1,9 @@
 import React from "react";
+import usePageTitle from "../../hooks/usePageTitles";
 
 const Home = () => {
+  usePageTitle("Inicio | FilmRank");
+
   return (
     <>
       <h1>Inicio</h1>

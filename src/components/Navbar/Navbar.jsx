@@ -26,7 +26,7 @@ const Navbar = () => {
             <NavLink to="/" className={getNavLinkClass}>Inicio</NavLink>
           </li>
           <li className="nav-list-item">
-            <NavLink to="/películas" className={getNavLinkClass}>Películas</NavLink>
+            <NavLink to="/peliculas" className={getNavLinkClass}>Películas</NavLink>
           </li>
           <li className="nav-list-item">
             <NavLink to="/series" className={getNavLinkClass}>Series</NavLink>
@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="mobile-menu">
         <p className="mobile-menu__title">Menú</p>
         <NavLink to="/" onClick={closeMenu} className={getNavLinkClass}><House /> Inicio</NavLink>
-        <NavLink to="/películas" onClick={closeMenu} className={getNavLinkClass}><Clapperboard /> Películas</NavLink>
+        <NavLink to="/peliculas" onClick={closeMenu} className={getNavLinkClass}><Clapperboard /> Películas</NavLink>
         <NavLink to="/series" onClick={closeMenu} className={getNavLinkClass}><TvMinimalPlay /> Series</NavLink>
         <NavLink to="/miranking" onClick={closeMenu} className={getNavLinkClass}><Star /> Mi Ranking</NavLink>
         <hr />
