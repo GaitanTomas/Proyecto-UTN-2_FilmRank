@@ -13,6 +13,7 @@
   background-color: var(--nav-bg);
   backdrop-filter: blur(1px);
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .nav-container__title-links, .nav-container__search-theme{
@@ -67,6 +68,7 @@
 }
 
 /* Mobile */
+/* Menu Hamburguesa */
 .menu-btn {
   display: none;
   background: none;
@@ -75,47 +77,74 @@
   color: var(--primary-text);
 }
 
+/* Modal del menu */
 .mobile-menu {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--nav-bg);
   position: absolute;
   top: 75px;
   right: 0;
-  width: 100%;
+  width: 80%; 
+  height: 100vh;
   padding: 1.5em;
-  gap: 1em;
-  z-index: 99;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: var(--nav-bg);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+  z-index: 1;
 }
 
-.mobile-menu a {
-  font-weight: bold;
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 20vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+}
+
+.mobile-menu .nav-link {
   padding: 0.5em 0;
+  font-weight: bold;
+}
+
+.mobile-menu__search-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.mobile-menu__title{
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-text);
 }
 
 /* Responsive */
 @media (max-width: 1200px) {
-  .nav-container__search-theme .searchbar {
+  .nav-container__search-theme .searchbar, .nav-container__title-links .nav-list {
     display: none; 
   }
 
   .mobile-menu .searchbar {
     display: flex; 
-    margin-bottom: 20px;
-  }
-
-  .nav-container__title-links .nav-list{
-    display: none;
+    padding: 0;
   }
 
   .menu-btn {
     display: block;
   }
 
-    .nav{
+  .nav{
     padding: 12px;
+  }
+
+  .nav-link{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
   }
 
   .nav-link.active{
@@ -127,5 +156,6 @@
     height: 1px;
     border: none;
     background-color: var(--secondary-text);
+    margin: 10px -10px 15px -10px;
   } 
 }

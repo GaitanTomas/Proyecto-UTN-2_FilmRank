@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, House, TvMinimalPlay, Star, Clapperboard } from "lucide-react";
 import ThemeToggle from "../ThemeToggle/ThemeToggle.jsx";
 import SearchBar from "../SearchBar/SearchBar.jsx";
 import "./Navbar.css";
@@ -45,15 +45,17 @@ const Navbar = () => {
       </div>
       {/* Menu mobile */}
       {isMenuOpen && (
-        <div className="mobile-menu">
-        <SearchBar />
-        <NavLink to="/" onClick={closeMenu} className={getNavLinkClass}>Inicio</NavLink>
+      <div className="mobile-menu">
+        <p className="mobile-menu__title">Menú</p>
+        <NavLink to="/" onClick={closeMenu} className={getNavLinkClass}><House /> Inicio</NavLink>
+        <NavLink to="/películas" onClick={closeMenu} className={getNavLinkClass}><Clapperboard /> Películas</NavLink>
+        <NavLink to="/series" onClick={closeMenu} className={getNavLinkClass}><TvMinimalPlay /> Series</NavLink>
+        <NavLink to="/miranking" onClick={closeMenu} className={getNavLinkClass}><Star /> Mi Ranking</NavLink>
         <hr />
-        <NavLink to="/películas" onClick={closeMenu} className={getNavLinkClass}>Películas</NavLink>
-        <hr />
-        <NavLink to="/series" onClick={closeMenu} className={getNavLinkClass}>Series</NavLink>
-        <hr />
-        <NavLink to="/miranking" onClick={closeMenu} className={getNavLinkClass}>Mi Ranking</NavLink>
+        <div className="mobile-menu__search-container">
+          <p className="mobile-menu__title">Búsqueda</p>
+          <SearchBar />
+        </div>
       </div>
       )}
     </nav>
