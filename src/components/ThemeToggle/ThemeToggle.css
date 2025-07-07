@@ -1,4 +1,5 @@
 .toggle-theme-btn{
-  width: 1.3rem;
+  width: 24px;
   background: transparent;
+  outline: none;
 }

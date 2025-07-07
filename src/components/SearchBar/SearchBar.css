@@ -1,0 +1,34 @@
+/* Searchbar container */
+.searchbar{
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background-color: var(--nav-bg);
+}
+
+/* Searchbar input */
+.search-input{
+  width: 100%;
+  padding: 0.5em 0.4em;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--secondary-text);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  color: var(--primary-text);
+}
+
+/* Searchbar Icon */
+.search-icon {
+  width: 24px;
+  background: transparent;
+  outline: none;
+}
+

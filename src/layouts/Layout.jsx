@@ -1,11 +1,17 @@
 import React from "react";
-import ThemeToggle from "../components/ThemeToggle/ThemeToggle.jsx";
+import { Outlet } from 'react-router-dom';
+import Navbar from "../components/Navbar/Navbar.jsx";
 
 const Layout = () => {
   return (
-    <nav>
-      <ThemeToggle />
-    </nav>
+    <>
+      <header className="header">
+        <Navbar />
+      </header>
+      <main style={{ paddingTop: "80px" }}>
+        <Outlet /> 
+      </main>
+    </>
   );
 };
 
