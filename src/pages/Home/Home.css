@@ -1,0 +1,7 @@
+/* Section Home */
+.home-page{
+  display: flex;
+  flex-direction: column;
+  gap: 4.8vw;
+  margin: 1.7vw 0;
+}

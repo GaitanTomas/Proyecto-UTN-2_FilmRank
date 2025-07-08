@@ -1,0 +1,82 @@
+/* Card */
+.card{
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-text);
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Card img */
+.card-image-container{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-img:hover{
+  transform: scale(1.05);
+  filter: brightness(0.7);
+  transition: all 0.5s ease;
+}
+
+/* Card content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 12px;
+}
+
+/* title */
+.card-title {
+  font-size: clamp(0.85rem, 1vw, 1.5rem);
+  font-weight: 600;
+  white-space: nowrap;         
+  overflow: hidden;            
+  text-overflow: ellipsis;
+}
+
+/* rating and date */
+.card-info-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-size: clamp(0.7rem, 1vw, 1.2rem);
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.card-date{
+  font-size: clamp(0.7rem, 1vw, 1.2rem);
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+/* btn */
+.card-button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  color: #FAFAFA;
+  background-color: var(--primary-btn);
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: var(--hover-btn);
+}
