@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getTrendingMovies, getTrendingSeries, getUpcomingMovies } from '../../services/tmdb-api.js';
 import SwiperContainer from '../../components/SwiperContainer/SwiperContainer.jsx';
 import usePageTitle from "../../hooks/usePageTitles";
+import Loader from '../../components/Loader/Loader.jsx';
 import './Home.css';
 
 function Home() {
@@ -33,7 +34,7 @@ function Home() {
     fetchData();
   }, []);
 
-  if (loading) return "cargando...";
+  if (loading) return <Loader />;
 
   return (
     <section className="home-page">

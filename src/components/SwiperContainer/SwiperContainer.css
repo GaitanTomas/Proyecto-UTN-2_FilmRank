@@ -15,17 +15,16 @@
 /* Navigation */
 .swiper-button-prev,
 .swiper-button-next {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 90px;
   top: 50%;
   transform: translateY(-80%);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
 
