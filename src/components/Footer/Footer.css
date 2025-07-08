@@ -1,0 +1,16 @@
+/* Footer */
+.footer{
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 3em;
+  color: var(--secondary-text);
+}
+
+.footer-name{
+  font-weight: bold;
+}
+
+.footer-name:hover{
+  color: var(--primary-btn);
+  transition: color 0.3s ease;
+}
