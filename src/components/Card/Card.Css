@@ -36,7 +36,7 @@
 
 /* title */
 .card-title {
-  font-size: clamp(0.85rem, 1vw, 1.5rem);
+  font-size: clamp(0.92rem, 1vw, 1.5rem);
   font-weight: 600;
   white-space: nowrap;         
   overflow: hidden;            
@@ -56,13 +56,13 @@
   flex-direction: row;
   align-items: center;
   gap: 4px;
-  font-size: clamp(0.7rem, 1vw, 1.2rem);
+  font-size: clamp(0.80rem, 1vw, 1.2rem);
   font-weight: 500;
   color: var(--secondary-text);
 }
 
 .card-date{
-  font-size: clamp(0.7rem, 1vw, 1.2rem);
+  font-size: clamp(0.80rem, 1vw, 1.2rem);
   font-weight: 500;
   color: var(--secondary-text);
 }
@@ -71,7 +71,8 @@
 .card-button {
   padding: 8px 12px;
   border-radius: 4px;
-  font-size: clamp(0.85rem, 1vw, 1rem);
+  font-size: clamp(0.85rem, 1vw, 1.15rem);
+  font-weight: 500;
   color: #FAFAFA;
   background-color: var(--primary-btn);
   transition: background-color 0.3s;
