@@ -38,10 +38,16 @@
   display: flex;
 }
 
-.swiper-button-prev {
+.swiper-button-prev { 
   left: 0;
 }
 
 .swiper-button-next {
   right: 0;
+}
+
+@media (min-width: 1890px){
+.swiper-button-next {
+  right: 11px;
+}
 }

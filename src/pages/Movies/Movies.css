@@ -1,0 +1,32 @@
+/* Section Movies */
+.movies-page, .series-page{
+  padding: 1.7vw 7.5vw;
+}
+
+.movies-page__title, .series-page__title{ 
+  font-size: clamp(1.2rem, 1.4vw, 2rem);
+  margin: 1.6rem 0 1.6rem 0;
+  text-align: left;
+}
+
+/* grid */
+.movies-page__cards-grid, .series-page__cards-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 18px;
+  row-gap: 75px;
+}
+
+/* Responsive */
+@media (max-width: 1031px){
+.movies-page__cards-grid, .series-page__cards-grid{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+}
+
+@media (max-width: 490px){
+.movies-page__cards-grid, .series-page__cards-grid{
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  row-gap: 45px;
+}
+}
