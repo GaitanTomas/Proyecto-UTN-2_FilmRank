@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './SwiperContainer.css';
 
-function SwiperSlider({ title, items, type }) {
+function SwiperSlider({ title, items }) {
   return (
     <section className="slider-section">
       <h2 className="slider-title">{title}</h2>
@@ -25,7 +25,7 @@ function SwiperSlider({ title, items, type }) {
       }}>
         {items.map(item => (
           <SwiperSlide key={item.id}>
-            <Card item={item} type={type} />
+            <Card item={item}/>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -36,7 +36,6 @@ function SwiperSlider({ title, items, type }) {
 SwiperSlider.propTypes = {
   title: PropTypes.string.isRequired,
   items: PropTypes.array.isRequired,
-  type: PropTypes.oneOf(['movie', 'tv']).isRequired
 };
 
 export default SwiperSlider;

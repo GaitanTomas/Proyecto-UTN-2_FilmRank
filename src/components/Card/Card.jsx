@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Star } from 'lucide-react';
 import { getYear } from '../../utils/formatDate.js';
+import placeholder from '../../assets/placeholder.jpg'
 import './Card.css';
 
 function Card({ item }) {
   const title = item.title || item.name;
-  const imageUrl = `https://image.tmdb.org/t/p/w500${item.poster_path}`
+  const imageUrl = item.poster_path ? `https://image.tmdb.org/t/p/w300${item.poster_path}` : placeholder;
   const rating = item.vote_average?.toFixed(1);
   const date = item.release_date || item.first_air_date;
   const year = getYear(date);

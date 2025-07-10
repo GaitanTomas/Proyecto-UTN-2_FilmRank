@@ -38,9 +38,9 @@ function Home() {
 
   return (
     <section className="home-page">
-      <SwiperContainer title="Películas en Tendencia" items={trendingMovies} type="movie" />
-      <SwiperContainer title="Series en Tendencia" items={trendingSeries} type="tv" />
-      <SwiperContainer title="Próximos Estrenos" items={upcomingMovies} type="movie" />
+      <SwiperContainer title="Películas en Tendencia" items={trendingMovies}/>
+      <SwiperContainer title="Series en Tendencia" items={trendingSeries}/>
+      <SwiperContainer title="Próximos Estrenos" items={upcomingMovies}/>
     </section>
   );
 }
