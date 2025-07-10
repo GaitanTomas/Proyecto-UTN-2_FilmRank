@@ -8,13 +8,16 @@ import Series from "../pages/Series/Series";
 import MyRanking from "../pages/MyRanking/MyRanking";
 import Detail from "../pages/Detail/Detail";
 import NotFound from "../pages/NotFound/NotFound";
+import SearchResults from '../pages/SearchResult/SearchResult';
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="/buscar/peliculas" element={<SearchResults />} />
         <Route path="peliculas" element={<Movies />} />
+        <Route path="/buscar/series" element={<SearchResults />} />
         <Route path="series" element={<Series />} />
         <Route path="miranking" element={<MyRanking />} />
         <Route path="pelicula/:id" element={<Detail type="movie" />} />

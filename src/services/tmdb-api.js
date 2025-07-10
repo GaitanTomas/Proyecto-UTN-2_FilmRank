@@ -38,6 +38,16 @@ export function getTopSeries(page) {
   return fetchFromTMDB("/tv/top_rated?", page);
 }
 
+// Buscar películas por nombre
+export function searchMovies(query, page = 1) {
+  return fetchFromTMDB(`/search/movie?query=${encodeURIComponent(query)}&page=${page}`);
+}
+
+// Buscar series por nombre
+export function searchSeries(query, page = 1) {
+  return fetchFromTMDB(`/search/tv?query=${encodeURIComponent(query)}&page=${page}`);
+}
+
 
 
 
