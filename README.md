@@ -1,15 +1,17 @@
-# 🎬 FilmRank - Aplicación Web de Películas y Series
+# 🎬 **FilmRank** - Aplicación Web de Películas y Series
 
 FilmRank es una SPA (Single Page Application) desarrollada en **React** que permite explorar, buscar y calificar películas y series utilizando la API de **TMDB (The Movie Database)**. El proyecto fue realizado como parte del trabajo práctico final del ciclo Front-End en UTN.
 
 ---
 
-## 🌐 Demo del proyecto
-🔗 [[Próximamente en GitHub Pages o Netlify](https://film-rank.netlify.app/)]
+## 🌐 **Demo del Proyecto**
+👀 **Explora la aplicación en vivo:**
+
+🔗 [**Ver Sitio Web en Netlify**](https://film-rank.netlify.app/)
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 **Estructura del Proyecto**
 ```
 FilmRank-App/
 ├── assets/                 # Recursos estáticos (placeholder)
@@ -30,7 +32,7 @@ FilmRank-App/
 
 ---
 
-## ⚙️ Funcionalidades principales
+## ⚙️ **Funcionalidades principales**
 
 - 🔍 **Búsqueda por nombre** de películas o series (con manejo de query en la URL)
 - 📃 **Scroll infinito** en listados (películas, series, búsqueda)
@@ -47,7 +49,7 @@ FilmRank-App/
 
 ---
 
-## 🔑 API Utilizada
+## 🔑 **API Utilizada**
 
 - [TMDB API (The Movie Database)](https://www.themoviedb.org/documentation/api)
   - Requiere clave personal gratuita.
@@ -59,7 +61,7 @@ FilmRank-App/
 
 ---
 
-## ❗ Requisitos
+## ❗ **Requisitos**
 
 - Node.js 18+
 - npm o yarn
@@ -67,7 +69,7 @@ FilmRank-App/
 
 ---
 
-## 🔧 Instalación y uso local
+## 🔧 **Instalación y uso local**
 
 1. **Clonar el repositorio**
 
@@ -100,7 +102,7 @@ La aplicación estará disponible en: [http://localhost:5173](http://localhost:5
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ **Tecnologías Utilizadas**
 
 - React + Vite
 - JavaScript
@@ -116,7 +118,7 @@ La aplicación estará disponible en: [http://localhost:5173](http://localhost:5
 
 ---
 
-## 🖥️ Scripts disponibles
+## 🖥️ **Scripts disponibles**
 
 - `npm run dev` — Iniciar entorno de desarrollo.
 - `npm run build` — Crear build de producción.
@@ -125,12 +127,12 @@ La aplicación estará disponible en: [http://localhost:5173](http://localhost:5
 
 ---
 
-## 📝 Notas importantes
+## 📝 **Notas importantes**
 
 - Proyecto 100% **frontend**, sin backend.
 - No requiere base de datos.
-- Requiere conexión a Internet para la API de TMDB.
-- API Key debe estar en archivo `.env` (no subir a GitHub).
+- **Requiere conexión a Internet** para interactuar con la API de TMDB.
+- La **API Key** debe estar en el archivo `.env` (¡no la subas a GitHub!).
 
 ---
 
