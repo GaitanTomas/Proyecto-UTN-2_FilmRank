@@ -46,6 +46,13 @@
   right: 0;
 }
 
+@media (max-width: 1200px){
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+}
+}
+
 @media (min-width: 1890px){
 .swiper-button-next {
   right: 11px;

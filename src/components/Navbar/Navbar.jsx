@@ -46,16 +46,16 @@ const Navbar = () => {
       {/* Menu mobile */}
       {isMenuOpen && (
       <div className="mobile-menu">
+        <div className="mobile-menu__search-container">
+          <p className="mobile-menu__title">Búsqueda</p>
+          <SearchBar />
+        </div>
+        <hr />
         <p className="mobile-menu__title">Menú</p>
         <NavLink to="/" onClick={closeMenu} className={getNavLinkClass}><House /> Inicio</NavLink>
         <NavLink to="/peliculas" onClick={closeMenu} className={getNavLinkClass}><Clapperboard /> Películas</NavLink>
         <NavLink to="/series" onClick={closeMenu} className={getNavLinkClass}><TvMinimalPlay /> Series</NavLink>
         <NavLink to="/miranking" onClick={closeMenu} className={getNavLinkClass}><Star /> Mi Ranking</NavLink>
-        <hr />
-        <div className="mobile-menu__search-container">
-          <p className="mobile-menu__title">Búsqueda</p>
-          <SearchBar />
-        </div>
       </div>
       )}
     </nav>
