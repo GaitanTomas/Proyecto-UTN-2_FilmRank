@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, House, TvMinimalPlay, Star, Clapperboard } from "lucide-react";
 import ThemeToggle from "../ThemeToggle/ThemeToggle.jsx";
 import SearchBar from "../SearchBar/SearchBar.jsx";
@@ -13,6 +13,18 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMenuOpen && !event.target.closest('.mobile-menu') && !event.target.closest('.menu-btn')) {
+        closeMenu();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className="nav">
@@ -58,6 +70,8 @@ const Navbar = () => {
         <NavLink to="/miranking" onClick={closeMenu} className={getNavLinkClass}><Star /> Mi Ranking</NavLink>
       </div>
       )}
+      {/* Overlay para detectar clic fuera del menú */}
+      {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
     </nav>
   );
 };
