@@ -13,21 +13,31 @@ FilmRank es una SPA (Single Page Application) desarrollada en **React** que perm
 
 ## 📁 **Estructura del Proyecto**
 ```
+
 FilmRank-App/
-├── assets/                 # Recursos estáticos (placeholder)
-├── components/             # Componentes reutilizables (Navbar, Footer, Card, etc.)
-├── context/                # Contextos globales (Tema, Ranking)
-├── hooks/                  # Hooks personalizados (useTheme, useDebounce, usePageTitle...)
-├── layouts/                # Componente Layout general
-├── pages/                  # Vistas principales (Home, Movies, Series, Detalle, etc.)
-├── routes/                 # Rutas de la aplicación
-├── services/               # Funciones para interactuar con la API de TMDB
-├── styles/                 # CSS global (globals, variables)
-├── utils/                  # Helpers y funciones utilitarias
-├── App.jsx                 # Componente raíz
-├── main.jsx                # Punto de entrada
-├── .env                    # Variables de entorno (API Key)
-└── README.md               # Este archivo
+├── node_modules/               # Dependencias instaladas por npm
+├── public/                     # Archivos públicos (logo, _redirects)
+├── src/ 
+|    ├── assets/                # Recursos estáticos (placeholder)
+|    ├── components/            # Componentes reutilizables (Navbar, Footer, Card, etc.)
+|    ├── context/               # Contextos globales (Tema, Ranking)
+|    ├── hooks/                 # Hooks personalizados (useTheme, useDebounce, usePageTitle, etc.)
+|    ├── layouts/               # Componente Layout generales (estructura común de la app)
+|    ├── pages/                 # Vistas principales (Home, Movies, Series, Detalle, etc.)
+|    ├── routes/                # Definición de las rutas de la aplicación
+|    ├── services/              # Funciones para interactuar con la API de TMDB
+|    ├── styles/                # Archivos de estilos globales (globals, variables)
+|    ├── utils/                 # Funciones auxiliares y utilitarias
+|    ├── App.jsx                # Componente raíz de la aplicación
+|    └── main.jsx               # Punto de entrada de la aplicación (renderizado inicial)
+├── index.html                  # Plantilla HTML principal
+├── package.json                # Dependencias y scripts del proyecto
+├── package-lock.json           # Versiones fijas de las dependencias instaladas
+├── vite.config.js              # Configuración de Vite (herramienta de construcción)
+├── .env                        # Variables de entorno (incluye API Key)
+├── .gitignore                  # Archivos y directorios ignorados por Git
+└── README.md                   # Documentación del proyecto
+
 ```
 
 ---
