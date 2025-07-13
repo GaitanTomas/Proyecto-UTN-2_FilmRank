@@ -6,7 +6,7 @@ import Loader from '../../components/Loader/Loader.jsx';
 import './Home.css';
 
 function Home() {
-  usePageTitle("Inicio | FilmRank");
+  usePageTitle("FilmRank");
   const [trendingMovies, setTrendingMovies] = useState([]);
   const [trendingSeries, setTrendingSeries] = useState([]);
   const [upcomingMovies, setUpcomingMovies] = useState([]);
