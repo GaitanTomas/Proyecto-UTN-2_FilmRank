@@ -50,7 +50,7 @@ FilmRank-App/
 - 🌗 **Modo oscuro / claro** con persistencia en localStorage
 - 💾 **Lista personalizada** de contenido visto con calificación y almacenamiento local
 - 📱 **Diseño responsive** para celular y desktop
-- 🔃 **SplashScreen**, **Loader** global, y navegación fluida
+- 🔃 **Loader** global, y navegación fluida
 - 📦 **PropTypes** y código modular
 - 🧠 **React Context API** y hooks personalizados
 - ✅ SEO básico con títulos dinámicos por página
@@ -120,7 +120,6 @@ La aplicación estará disponible en: [http://localhost:5173](http://localhost:5
 - Swiper.js (para sliders en inicio)
 - React Infinite Scroll Component
 - PropTypes
-- React Toastify (notificaciones)
 - Lucide React (íconos SVG)
 - Context API y Custom Hooks
 - CSS Modules + Variables CSS
