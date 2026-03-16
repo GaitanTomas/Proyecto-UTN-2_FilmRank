@@ -1,0 +1,31 @@
+.rating-stars {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  color: var(--secondary-text);
+}
+
+.rating-stars.interactive .star-btn:hover {
+  transform: scale(1.15);
+}
+
+.rating-stars.interactive .star-btn:disabled {
+  cursor: not-allowed;
+}
+
+.star-btn.active {
+  color: #FF9900;
+}

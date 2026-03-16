@@ -74,6 +74,27 @@
   color: var(--secondary-text);
 }
 
+.my-ranking-container{
+  font-size: clamp(0.80rem, 1vw, 1rem);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+}
+
+/* User rating badge */
+.card-user-rating {
+  padding: 6px 0;
+}
+
+.user-rating-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
 /* btn */
 .card-button {
   padding: 8px 12px;
@@ -83,8 +104,20 @@
   color: #FAFAFA;
   background-color: var(--primary-btn);
   transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .card-button:hover {
   background-color: var(--hover-btn);
+}
+
+.card-button.delete {
+  background-color: #666;
+}
+
+.card-button.delete:hover {
+  background-color: #888;
 }

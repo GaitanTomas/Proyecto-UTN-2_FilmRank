@@ -1,0 +1,81 @@
+/* Header section with stats */
+.my-ranking-stats {
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+  color: var(--secondary-text);
+}
+
+.my-ranking-stats p {
+  margin-bottom: 20px;
+}
+
+.my-ranking-stats strong {
+  color: var(--primary-text);
+}
+
+/* Sort controls */
+.my-ranking-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sort-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary-text);
+}
+
+.sort-select {
+  padding: 8px 12px;
+  border: 1px solid var(--secondary-text);
+  border-radius: 6px;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: var(--primary-font);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.sort-select:hover,
+.sort-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.ranking-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Empty state */
+.my-ranking-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--secondary-text);
+}
+
+.my-ranking-empty svg {
+  opacity: 0.5;
+}
+
+.my-ranking-empty h3 {
+  font-size: 1.25rem;
+  color: var(--primary-text);
+  margin: 0;
+}
+
+.my-ranking-empty p {
+  font-size: 0.95rem;
+  margin: 0;
+  max-width: 400px;
+}

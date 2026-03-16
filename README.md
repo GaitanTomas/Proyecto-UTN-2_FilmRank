@@ -44,6 +44,7 @@ FilmRank-App/
 
 ## ⚙️ **Funcionalidades principales**
 
+- ⭐ **Sistema de calificación** de 1 a 5 estrellas
 - 🔍 **Búsqueda por nombre** de películas o series (con manejo de query en la URL)
 - 📃 **Scroll infinito** en listados (películas, series, búsqueda)
 - 🗂️ **Secciones dinámicas**: Películas, Series, Inicio (con Swiper), Detalle, Mi Ranking
