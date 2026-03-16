@@ -69,7 +69,7 @@ function Card({ item }) {
                 onClick={handleRemoveClick}
                 title="Eliminar de mi ranking"
               >
-                <Trash2 size={18} />
+                <Trash2 size={17} />
                 Eliminar
               </button>
               <button 
@@ -77,7 +77,7 @@ function Card({ item }) {
                 onClick={handleRateClick}
                 title="Editar calificación"
               >
-                <Pencil size={20} />
+                <Pencil size={21} />
               </button>
             </div>
           ) : (
