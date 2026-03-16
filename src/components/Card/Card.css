@@ -37,8 +37,8 @@
 .card-content {
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  padding: 12px;
+  gap: 7px;
+  padding: 12px 12px;
 }
 
 /* title */
@@ -96,6 +96,12 @@
 }
 
 /* btn */
+.card-btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 8px
+}
+
 .card-button {
   padding: 8px 12px;
   border-radius: 4px;
@@ -116,8 +122,13 @@
 
 .card-button.delete {
   background-color: #666;
+  width: 100%;
 }
 
 .card-button.delete:hover {
   background-color: #888;
+}
+
+.card-button.edit {
+  padding: 0px 10px;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Star, Trash2 } from 'lucide-react';
+import { Star, Trash2, Pencil } from 'lucide-react';
 import { getYear } from '../../utils/formatDate.js';
 import { RankingContext } from '../../context/RankingContext.jsx';
 import RatingModal from '../Modal/RatingModal.jsx';
@@ -63,14 +63,23 @@ function Card({ item }) {
             )}
           </div>
           {rated ? (
-            <button 
-              className="card-button delete"
-              onClick={handleRemoveClick}
-              title="Eliminar de mi ranking"
-            >
-              <Trash2 size={16} />
-              Eliminar
-            </button>
+            <div className= "card-btn-container">
+              <button 
+                className="card-button delete"
+                onClick={handleRemoveClick}
+                title="Eliminar de mi ranking"
+              >
+                <Trash2 size={16} />
+                Eliminar
+              </button>
+              <button 
+                className="card-button edit"
+                onClick={handleRateClick}
+                title="Editar calificación"
+              >
+                <Pencil size={20} />
+              </button>
+            </div>
           ) : (
             <button 
               className="card-button"
