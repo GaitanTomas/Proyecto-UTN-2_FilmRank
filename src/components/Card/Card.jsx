@@ -5,6 +5,7 @@ import { getYear } from '../../utils/formatDate.js';
 import { RankingContext } from '../../context/RankingContext.jsx';
 import RatingModal from '../Modal/RatingModal.jsx';
 import placeholder from '../../assets/placeholder.jpg'
+import { toast } from 'react-toastify';
 import './Card.css';
 
 function Card({ item }) {
@@ -29,10 +30,12 @@ function Card({ item }) {
   const handleRemoveClick = (e) => {
     e.stopPropagation();
     removeRating(item.id);
+    toast.info("¡Calificación eliminada correctamente!");
   };
 
   const handleModalConfirm = (userRating) => {
     addRating(item, userRating);
+    toast.success(`¡Calificación guardada correctamente: ⭐ ${userRating}/5!`);
   };
 
   return (

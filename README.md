@@ -46,6 +46,7 @@ FilmRank-App/
 
 - 💾 **Lista personalizada** de contenido visto con calificación y almacenamiento local (no se guarda entre dispositivos)
 - ⭐ **Sistema de calificación** de 1 a 5 estrellas editable
+- 🛎️ **Notificaciones en tiempo real con Toastify** para acciones como calificar o eliminar
 - 🔍 **Búsqueda por nombre** de películas o series (con manejo de query en la URL)
 - 📃 **Scroll infinito** en listados (películas, series, búsqueda)
 - 🗂️ **Secciones dinámicas**: Películas, Series, Inicio (con Swiper), Detalle, Mi Ranking
@@ -125,6 +126,7 @@ La aplicación estará disponible en: [http://localhost:5173](http://localhost:5
 - Context API y Custom Hooks
 - CSS Modules + Variables CSS
 - LocalStorage (para persistencia de datos como el ranking o el modo de tema)
+- React Toastify
 
 ---
 

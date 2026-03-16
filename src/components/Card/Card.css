@@ -133,3 +133,18 @@
 .card-button.edit {
   padding: 0px 8px;
 }
+
+/* toast */
+.custom-toast{
+  color: var(--primary-text) !important;
+  background-color: var(--primary-bg) !important;
+  box-shadow: 0 12px 8px rgba(0,0,0,0.4) !important;
+  border-radius: 5px !important;
+}
+
+@media (max-width: 1031px){
+  .custom-toast{
+    top: 15px !important;
+    width: 70% !important;
+  }
+}
