@@ -99,7 +99,7 @@
 .card-btn-container{
   display: flex;
   justify-content: center;
-  gap: 8px
+  gap: 4px
 }
 
 .card-button {
@@ -123,6 +123,7 @@
 .card-button.delete {
   background-color: #666;
   width: 100%;
+  padding: 7px 0px;
 }
 
 .card-button.delete:hover {

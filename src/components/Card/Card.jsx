@@ -69,7 +69,7 @@ function Card({ item }) {
                 onClick={handleRemoveClick}
                 title="Eliminar de mi ranking"
               >
-                <Trash2 size={16} />
+                <Trash2 size={18} />
                 Eliminar
               </button>
               <button 
