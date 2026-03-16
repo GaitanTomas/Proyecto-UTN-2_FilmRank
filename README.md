@@ -44,12 +44,12 @@ FilmRank-App/
 
 ## ⚙️ **Funcionalidades principales**
 
-- ⭐ **Sistema de calificación** de 1 a 5 estrellas
+- 💾 **Lista personalizada** de contenido visto con calificación y almacenamiento local
+- ⭐ **Sistema de calificación** de 1 a 5 estrellas (no se guarda entre dispositivos)
 - 🔍 **Búsqueda por nombre** de películas o series (con manejo de query en la URL)
 - 📃 **Scroll infinito** en listados (películas, series, búsqueda)
 - 🗂️ **Secciones dinámicas**: Películas, Series, Inicio (con Swiper), Detalle, Mi Ranking
 - 🌗 **Modo oscuro / claro** con persistencia en localStorage
-- 💾 **Lista personalizada** de contenido visto con calificación y almacenamiento local
 - 📱 **Diseño responsive** para celular y desktop
 - 🔃 **Loader** global, y navegación fluida
 - 📦 **PropTypes** y código modular
