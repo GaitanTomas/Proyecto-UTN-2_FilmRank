@@ -1,22 +1,28 @@
-.search-bar-container {
+/* Search Bar Ranking - Local search component */
+.search-bar-ranking-container {
   margin-bottom: 24px;
 }
 
-.search-bar-box {
+.search-bar-ranking-box {
   position: relative;
   display: flex;
   align-items: center;
   max-width: 400px;
 }
 
-.search-icon {
+.search-bar-ranking-icon {
   position: absolute;
   left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--secondary-text);
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.search-bar-input {
+.search-bar-ranking-input {
   width: 100%;
   padding: 10px 40px 10px 40px;
   border: 1px solid var(--secondary-text);
@@ -28,17 +34,17 @@
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.search-bar-input:focus {
+.search-bar-ranking-input:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent)20;
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.2);
 }
 
-.search-bar-input::placeholder {
+.search-bar-ranking-input::placeholder {
   color: var(--secondary-text);
 }
 
-.search-clear-btn {
+.search-bar-ranking-clear-btn {
   position: absolute;
   right: 12px;
   background: none;
@@ -50,8 +56,10 @@
   align-items: center;
   justify-content: center;
   transition: color 0.3s;
+  height: 24px;
+  width: 24px;
 }
 
-.search-clear-btn:hover {
+.search-bar-ranking-clear-btn:hover {
   color: var(--primary-text);
 }

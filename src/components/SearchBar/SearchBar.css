@@ -1,5 +1,5 @@
-/* Searchbar container */
-.searchbar{
+/* Searchbar container - Nav Context */
+.searchbar {
   display: flex;
   align-items: center;
   gap: 0.1em;
@@ -9,7 +9,7 @@
 }
 
 /* Searchbar input */
-.search-input{
+.search-input {
   width: 100%;
   padding: 0.5em 0.4em;
   border: none;
@@ -25,10 +25,32 @@
   color: var(--primary-text);
 }
 
-/* Searchbar Icon */
+/* Searchbar Icon - Nav Context */
 .search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
+  height: 24px;
+  padding: 0;
   background: transparent;
-  outline: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.3s ease;
 }
+
+.search-icon:hover {
+  opacity: 0.8;
+}
+
+.search-icon:active {
+  transform: scale(0.95);
+}
+
+.search-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 
